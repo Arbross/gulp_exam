@@ -1,0 +1,38 @@
+aside {
+    background-image: url("../img/svg-01/bg-dark-2.svg");
+    width: 100%;
+    height: 35px;
+
+    div {
+        @include dflex(flex, space-between);
+
+        div div p {
+            @include textFormat(normal, $font-roboto-thin, 20px, $caddea);
+
+            span {
+                @include textFormat(bold, $font-roboto-regular, 20px, $caddea);
+            }
+        }
+        
+        img {
+            width: 35px;
+            &:hover {
+                color: $i1b7fd0;
+            }
+        }
+    }
+}
+
+.login {
+    @include textFormat(normal, $font-roboto-regular, 22px, $ffffff);
+    &:hover {
+        @include textFormat(normal, $font-roboto-regular, 22px, $i1b7fd0);
+    }
+}
+
+.live-chat {
+    @include textFormat(normal, $font-roboto-regular, 22px, $ffffff);
+    &:hover {
+        @include textFormat(normal, $font-roboto-regular, 22px, $i1b7fd0);
+    }
+}

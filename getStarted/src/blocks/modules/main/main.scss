@@ -1,0 +1,6 @@
+main {
+    h2 {
+        @include textFormat(normal, $font-roboto-regular, 30px, $ffffff);
+        color: #4998d8;
+    }
+}

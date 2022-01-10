@@ -1,0 +1,27 @@
+@mixin font ($font-size:14px,$font-color:brown,$font-weight:400,$font-family:$font-bold-italic) {
+    font-size: $font-size;
+    color:$font-color;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    
+}
+
+@mixin d-inline-flex {
+    display: inline-flex;
+}
+
+@mixin dflex ($flex:flex, $justify-content:space-between,$align-content:center) {
+    display: $flex;
+    justify-content: $justify-content;
+}
+
+@mixin upCase {
+    text-transform: uppercase;
+}
+
+@mixin textFormat ($weight:normal,$font-family:$font-roboto-black,$font-size:20px,$color:white) {
+    font-weight: $weight;
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+}
